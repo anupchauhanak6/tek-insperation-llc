@@ -72,7 +72,7 @@ function ClientSuccess() {
         {/* Header */}
         <div
           className={cn(
-            "text-center mb-9 md:mb-12.5 max-w-[600px] mx-auto transition-all duration-[600ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]",
+            "text-center mb-9 md:mb-12.5 max-w-150 mx-auto transition-all duration-600 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
           )}
         >
@@ -99,7 +99,7 @@ function ClientSuccess() {
               style={{ transitionDelay: `${index * 100}ms` }}
             >
               {/* Top Green Border Accent */}
-              <div className="absolute top-0 left-0 w-full h-[3px] bg-[#10b981] scale-x-0 transition-transform duration-400 group-hover/card:scale-x-100 rounded-t-2xl" />
+              <div className="absolute top-0 left-0 w-full h-0.75 bg-[#10b981] scale-x-0 transition-transform duration-400 group-hover/card:scale-x-100 rounded-t-2xl" />
 
               {/* Quote Icon */}
               <div className="w-9 h-9 bg-[#EBF7F1] text-[#10b981] flex items-center justify-center rounded-lg text-[0.9rem] mb-5 transition-all duration-300 group-hover/card:bg-[#10b981] group-hover/card:text-white group-hover/card:-rotate-12 group-hover/card:scale-105">
@@ -107,7 +107,7 @@ function ClientSuccess() {
               </div>
 
               {/* Rating Stars */}
-              <div className="flex gap-[3px] text-amber-400 text-[0.75rem] mb-3.75">
+              <div className="flex gap-0.75 text-amber-400 text-[0.75rem] mb-3.75">
                 {[...Array(5)].map((_, i) => (
                   <i key={i} className="fas fa-star" aria-hidden="true" />
                 ))}
@@ -126,7 +126,7 @@ function ClientSuccess() {
                   className="w-10 h-10 rounded-full object-cover border-2 border-[#EBF7F1]"
                 />
                 <div className="flex flex-col">
-                  <strong className="text-slate-900 text-[0.85rem] font-extrabold leading-[1.2] mb-[3px]">
+                  <strong className="text-slate-900 text-[0.85rem] font-extrabold leading-[1.2] mb-0.75">
                     {testi.name}
                   </strong>
                   <span className="text-slate-500 text-[0.65rem] font-bold uppercase tracking-[0.5px]">

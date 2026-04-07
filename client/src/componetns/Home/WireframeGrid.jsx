@@ -125,7 +125,7 @@ function WireframeGrid() {
           {gridItems.map((item, index) => (
             <article
               key={index}
-              className="p-6 lg:p-[35px_30px] bg-white lg:bg-transparent border border-slate-200 md:border-t-0 md:border-l-0 md:border-r md:border-b md:[&:nth-last-child(-n+2)]:border-b-0 md:even:border-r-0 rounded-xl md:rounded-none flex flex-col transition-all duration-400 relative overflow-hidden group/item"
+              className="p-6 lg:p-[35px_30px] bg-white lg:bg-transparent border border-slate-200 md:border-t-0 md:border-l-0 md:border-r md:border-b md:nth-last-[-n+2]:border-b-0 md:even:border-r-0 rounded-xl md:rounded-none flex flex-col transition-all duration-400 relative overflow-hidden group/item"
             >
               {/* Hover Gradient Tint */}
               <div className="absolute inset-0 bg-linear-to-br from-emerald-500/5 to-transparent opacity-0 transition-opacity duration-400 group-hover/item:opacity-100 z-0 pointer-events-none" />

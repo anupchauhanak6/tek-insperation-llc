@@ -59,43 +59,43 @@ function FAQ() {
   return (
     <section
       ref={sectionRef}
-      className="font-['Inter',sans-serif] bg-white py-[60px] md:py-[90px] px-4 md:px-5 relative w-full z-10"
+      className="font-['Inter',sans-serif] bg-white py-15 md:py-22.5 px-4 md:px-5 relative w-full z-10"
     >
       {/* Background Grid */}
-      <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(16,185,129,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.08)_1px,transparent_1px)] bg-[size:40px_40px] bg-top" />
+      <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(16,185,129,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.08)_1px,transparent_1px)] bg-size-[40px_40px] bg-top" />
 
-      <div className="max-w-[1150px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-[60px] relative z-10">
+      <div className="max-w-287.5 mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-15 relative z-10">
         {/* LEFT SIDE: HEADER */}
         <div
           className={cn(
-            "flex-1 lg:sticky lg:top-[100px] max-w-full lg:max-w-[400px] text-center lg:text-left transition-all duration-[600ms] ease-out",
+            "flex-1 lg:sticky lg:top-25 max-w-full lg:max-w-100 text-center lg:text-left transition-all duration-600 ease-out",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5",
           )}
         >
-          <div className="inline-flex items-center gap-1.5 text-[#10b981] bg-[#EBF7F1] py-1 px-3 rounded-full text-[0.65rem] font-extrabold uppercase tracking-[1.2px] mb-[15px] border border-[#10b981]/20">
+          <div className="inline-flex items-center gap-1.5 text-[#10b981] bg-[#EBF7F1] py-1 px-3 rounded-full text-[0.65rem] font-extrabold uppercase tracking-[1.2px] mb-3.75 border border-[#10b981]/20">
             <i className="fas fa-circle-question" aria-hidden="true" />{" "}
             Knowledge Base
           </div>
 
-          <h2 className="text-[1.8rem] md:text-[clamp(1.8rem,3vw,2.2rem)] text-slate-900 font-black leading-[1.2] m-0 mb-[12px] md:mb-[15px] tracking-[-1px]">
+          <h2 className="text-[1.8rem] md:text-[clamp(1.8rem,3vw,2.2rem)] text-slate-900 font-black leading-[1.2] m-0 mb-3 md:mb-3.75 tracking-[-1px]">
             Frequently Asked <br className="hidden lg:block" />
             <span className="text-[#10b981]">Questions</span>
           </h2>
 
-          <p className="text-[0.9rem] md:text-[0.85rem] text-slate-600 leading-[1.6] m-0 mb-[25px] md:mb-[30px] lg:max-w-none max-w-xl mx-auto lg:mx-0">
+          <p className="text-[0.9rem] md:text-[0.85rem] text-slate-600 leading-[1.6] m-0 mb-6.25 md:mb-7.5 lg:max-w-none max-w-xl mx-auto lg:mx-0">
             Quick answers to our most common enterprise staffing and consulting
             inquiries.
           </p>
 
-          <div className="bg-slate-900 rounded-xl p-[22px] flex items-start gap-[15px] text-left shadow-[0_15px_30px_rgba(15,23,42,0.1)] border-l-4 border-[#10b981] lg:max-w-none max-w-xl mx-auto lg:mx-0">
-            <div className="w-10 h-10 min-w-[40px] bg-white/5 text-[#10b981] text-[1rem] flex items-center justify-center rounded-lg">
+          <div className="bg-slate-900 rounded-xl p-5.5 flex items-start gap-3.75 text-left shadow-[0_15px_30px_rgba(15,23,42,0.1)] border-l-4 border-[#10b981] lg:max-w-none max-w-xl mx-auto lg:mx-0">
+            <div className="w-10 h-10 min-w-10 bg-white/5 text-[#10b981] text-[1rem] flex items-center justify-center rounded-lg">
               <i className="fas fa-headset" aria-hidden="true" />
             </div>
             <div>
               <h4 className="m-0 mb-1 text-[0.95rem] text-white font-bold">
                 Still have questions?
               </h4>
-              <p className="m-0 text-[0.8rem] text-slate-300 leading-[1.5]">
+              <p className="m-0 text-[0.8rem] text-slate-300 leading-normal">
                 Can't find the answer you're looking for? Reach out to our
                 leadership team.
               </p>
@@ -110,7 +110,7 @@ function FAQ() {
         </div>
 
         {/* RIGHT SIDE: ACCORDION */}
-        <div className="flex-[1.2] flex flex-col gap-[12px] w-full lg:max-w-none max-w-2xl mx-auto lg:mx-0">
+        <div className="flex-[1.2] flex flex-col gap-3 w-full lg:max-w-none max-w-2xl mx-auto lg:mx-0">
           {faqs.map((faq, index) => {
             const isActive = openIndex === index;
             return (
@@ -137,7 +137,7 @@ function FAQ() {
                 <button
                   onClick={() => toggleAccordion(index)}
                   className={cn(
-                    "w-full text-left bg-transparent border-none p-[15px_18px] md:p-[18px_22px] text-[0.9rem] md:text-[0.95rem] font-bold cursor-pointer flex justify-between items-center gap-[15px] transition-colors duration-300",
+                    "w-full text-left bg-transparent border-none p-[15px_18px] md:p-[18px_22px] text-[0.9rem] md:text-[0.95rem] font-bold cursor-pointer flex justify-between items-center gap-3.75 transition-colors duration-300",
                     isActive
                       ? "text-[#10b981] bg-white"
                       : "text-slate-900 hover:bg-slate-50",
@@ -146,7 +146,7 @@ function FAQ() {
                   {faq.q}
                   <span
                     className={cn(
-                      "w-7 h-7 min-w-[28px] rounded-md flex items-center justify-center text-[0.75rem] transition-all duration-400",
+                      "w-7 h-7 min-w-7 rounded-md flex items-center justify-center text-[0.75rem] transition-all duration-400",
                       isActive
                         ? "bg-[#10b981] text-white rotate-180"
                         : "bg-[#EBF7F1] text-[#10b981]",

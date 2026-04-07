@@ -74,16 +74,16 @@ function EngagementModel() {
 
       {/* Background Blobs (Using radial gradients to avoid huge blur bugs) */}
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute w-[800px] h-[800px] rounded-full bg-[radial-gradient(circle,rgba(10,130,75,0.35)_0%,transparent_60%)] -top-[20%] -left-[10%] animate-[tek-float-anim-model_12s_infinite_alternate_ease-in-out]" />
-        <div className="absolute w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.25)_0%,transparent_60%)] -bottom-[20%] -right-[10%] animate-[tek-float-anim-model_15s_infinite_alternate_ease-in-out] [animation-delay:-3s]" />
-        <div className="absolute w-[600px] h-[600px] rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0%,transparent_60%)] top-[20%] left-[20%] animate-[tek-float-anim-model_18s_infinite_alternate_ease-in-out] [animation-delay:-7s]" />
+        <div className="absolute w-200 h-200 rounded-full bg-[radial-gradient(circle,rgba(10,130,75,0.35)_0%,transparent_60%)] -top-[20%] -left-[10%] animate-[tek-float-anim-model_12s_infinite_alternate_ease-in-out]" />
+        <div className="absolute w-175 h-175 rounded-full bg-[radial-gradient(circle,rgba(16,185,129,0.25)_0%,transparent_60%)] -bottom-[20%] -right-[10%] animate-[tek-float-anim-model_15s_infinite_alternate_ease-in-out] [animation-delay:-3s]" />
+        <div className="absolute w-150 h-150 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.08)_0%,transparent_60%)] top-[20%] left-[20%] animate-[tek-float-anim-model_18s_infinite_alternate_ease-in-out] [animation-delay:-7s]" />
       </div>
 
       <div className="max-w-287.5 mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-12.5 relative z-20">
         {/* Left Side: Sticky Header */}
         <div
           className={cn(
-            "flex-1 lg:sticky lg:top-[130px] lg:self-start lg:pb-5 w-full max-w-full lg:max-w-112.5 text-center lg:text-left transition-all duration-700 ease-out",
+            "flex-1 lg:sticky lg:top-32.5 lg:self-start lg:pb-5 w-full max-w-full lg:max-w-112.5 text-center lg:text-left transition-all duration-700 ease-out",
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5",
           )}
         >
@@ -98,7 +98,7 @@ function EngagementModel() {
           </h2>
 
           {/* Compact Conclusion Box */}
-          <div className="bg-[#0f0f0f]/60 backdrop-blur-[16px] border border-white/60 border-l-4 border-l-[#10B981] rounded-xl p-5 lg:p-[22px_25px] relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] text-left">
+          <div className="bg-[#0f0f0f]/60 backdrop-blur-lg border border-white/60 border-l-4 border-l-[#10B981] rounded-xl p-5 lg:p-[22px_25px] relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] text-left">
             <i
               className="fas fa-shield-halved absolute -bottom-3.5 -right-2.5 text-[5rem] text-white/5 z-0 pointer-events-none"
               aria-hidden="true"
@@ -133,7 +133,7 @@ function EngagementModel() {
             <div
               key={index}
               className={cn(
-                "bg-[#0f0f0f]/60 backdrop-blur-[16px] border border-white/60 rounded-xl p-[18px_20px] lg:p-[22px_25px] shadow-[0_8px_32px_rgba(0,0,0,0.5)] transition-all duration-400 relative overflow-hidden flex flex-col group/step ease-out",
+                "bg-[#0f0f0f]/60 backdrop-blur-lg border border-white/60 rounded-xl p-[18px_20px] lg:p-[22px_25px] shadow-[0_8px_32px_rgba(0,0,0,0.5)] transition-all duration-400 relative overflow-hidden flex flex-col group/step ease-out",
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-5",
@@ -142,13 +142,13 @@ function EngagementModel() {
               style={{ transitionDelay: `${(index + 1) * 100}ms` }}
             >
               {/* Left animated border */}
-              <div className="absolute top-0 left-0 w-[3px] h-full bg-[#10B981] scale-y-0 origin-bottom transition-transform duration-400 group-hover/step:scale-y-100" />
+              <div className="absolute top-0 left-0 w-0.75 h-full bg-[#10B981] scale-y-0 origin-bottom transition-transform duration-400 group-hover/step:scale-y-100" />
 
               <div className="flex justify-between items-center lg:items-start mb-2.5 lg:mb-3">
                 <div className="text-[1.8rem] lg:text-[2.2rem] font-black leading-[0.8] text-transparent [-webkit-text-stroke:1.2px_rgba(255,255,255,0.4)] transition-all duration-300 group-hover/step:[-webkit-text-stroke:1.2px_#10B981] group-hover/step:text-[#0A824B]/10">
                   {step.num}
                 </div>
-                <div className="w-[35px] h-[35px] lg:w-[38px] lg:h-[38px] bg-[#0A824B]/25 text-[#10B981] text-[0.9rem] lg:text-[1rem] flex items-center justify-center rounded-lg transition-all duration-300 border border-[#10B981]/30 group-hover/step:bg-[#10B981] group-hover/step:text-white group-hover/step:-rotate-12 group-hover/step:scale-105">
+                <div className="w-8.75 h-8.75 lg:w-9.5 lg:h-9.5 bg-[#0A824B]/25 text-[#10B981] text-[0.9rem] lg:text-[1rem] flex items-center justify-center rounded-lg transition-all duration-300 border border-[#10B981]/30 group-hover/step:bg-[#10B981] group-hover/step:text-white group-hover/step:-rotate-12 group-hover/step:scale-105">
                   <i className={step.icon} aria-hidden="true" />
                 </div>
               </div>

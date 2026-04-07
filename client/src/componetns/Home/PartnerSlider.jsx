@@ -21,7 +21,7 @@ const duplicatedPartners = [...partners, ...partners];
 
 function PartnerSlider() {
   return (
-    <section className="font-['Inter',sans-serif] bg-white py-10 md:py-[60px] px-4 md:px-5 relative w-full overflow-hidden border-y border-black/5 z-10">
+    <section className="font-['Inter',sans-serif] bg-white py-10 md:py-15 px-4 md:px-5 relative w-full overflow-hidden border-y border-black/5 z-10">
       <style>
         {`
           @keyframes tekScrollLogos {
@@ -33,11 +33,11 @@ function PartnerSlider() {
       </style>
 
       {/* Faint Grid Background */}
-      <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(16,185,129,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.04)_1px,transparent_1px)] bg-[size:40px_40px] bg-top" />
+      <div className="absolute inset-0 z-0 pointer-events-none bg-[linear-gradient(rgba(16,185,129,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(16,185,129,0.04)_1px,transparent_1px)] bg-size-[40px_40px] bg-top" />
 
-      <div className="max-w-[1200px] mx-auto relative z-10 flex flex-col items-center">
+      <div className="max-w-300 mx-auto relative z-10 flex flex-col items-center">
         {/* Header Header (Micro Typography) */}
-        <div className="text-[0.6rem] md:text-[0.68rem] font-bold uppercase tracking-[1px] md:tracking-[2px] text-slate-500 mb-[25px] md:mb-[35px] text-center">
+        <div className="text-[0.6rem] md:text-[0.68rem] font-bold uppercase tracking-[1px] md:tracking-[2px] text-slate-500 mb-6.25 md:mb-8.75 text-center">
           Trusted by <span className="text-[#10b981] font-extrabold">500+</span>{" "}
           innovative enterprise teams worldwide
         </div>
@@ -53,7 +53,7 @@ function PartnerSlider() {
           }}
         >
           <div
-            className="flex items-center gap-10 md:gap-[60px] w-max hover:[animation-play-state:paused]"
+            className="flex items-center gap-10 md:gap-15 w-max hover:[animation-play-state:paused]"
             style={{ animation: "tekScrollLogos 30s linear infinite" }}
           >
             {duplicatedPartners.map((partner, index) => (

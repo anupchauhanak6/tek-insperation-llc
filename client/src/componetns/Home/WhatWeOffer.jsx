@@ -112,7 +112,7 @@ function WhatWeOffer() {
             <div
               key={index}
               className={cn(
-                "bg-[#0f0f0f]/60 backdrop-blur-[16px] border border-white/60 rounded-xl p-6 lg:p-[25px_25px] flex flex-col items-start transition-all duration-500 relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] h-full group/card hover:-translate-y-1.25 hover:bg-[#141414]/80 hover:border-white hover:shadow-[0_15px_35px_rgba(10,130,75,0.4)] ease-out",
+                "bg-[#0f0f0f]/60 backdrop-blur-lg border border-white/60 rounded-xl p-6 lg:p-[25px_25px] flex flex-col items-start transition-all duration-500 relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] h-full group/card hover:-translate-y-1.25 hover:bg-[#141414]/80 hover:border-white hover:shadow-[0_15px_35px_rgba(10,130,75,0.4)] ease-out",
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-5",
@@ -149,7 +149,7 @@ function WhatWeOffer() {
           {/* 6th CTA Card */}
           <div
             className={cn(
-              "bg-[#0A824B]/10 backdrop-blur-[16px] border border-white/80 rounded-xl p-7 flex flex-col justify-center items-center text-center relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] h-full transition-all duration-500 ease-out hover:-translate-y-1.25 hover:bg-[#0A824B]/20 hover:border-white",
+              "bg-[#0A824B]/10 backdrop-blur-lg border border-white/80 rounded-xl p-7 flex flex-col justify-center items-center text-center relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.5)] h-full transition-all duration-500 ease-out hover:-translate-y-1.25 hover:bg-[#0A824B]/20 hover:border-white",
               isVisible
                 ? "opacity-100 translate-y-0"
                 : "opacity-0 translate-y-5",

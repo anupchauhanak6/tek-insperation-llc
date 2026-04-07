@@ -70,13 +70,13 @@ function IndustryExpertise() {
         {/* Header */}
         <div
           className={cn(
-            "text-center mb-9 md:mb-12.5 max-w-[700px] mx-auto transition-all duration-[800ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]",
+            "text-center mb-9 md:mb-12.5 max-w-175 mx-auto transition-all duration-800 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
             isVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-7.5",
           )}
         >
-          <div className="inline-flex items-center gap-2 bg-white text-[#10b981] py-1.5 px-4 md:px-[18px] rounded-full text-[0.7rem] font-extrabold uppercase tracking-[1.5px] mb-3.75 border border-[#10b981]/20 shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
+          <div className="inline-flex items-center gap-2 bg-white text-[#10b981] py-1.5 px-4 md:px-4.5 rounded-full text-[0.7rem] font-extrabold uppercase tracking-[1.5px] mb-3.75 border border-[#10b981]/20 shadow-[0_4px_10px_rgba(0,0,0,0.02)]">
             <i className="fas fa-building" aria-hidden="true" /> Industry
             Expertise
           </div>
@@ -94,7 +94,7 @@ function IndustryExpertise() {
             <div
               key={index}
               className={cn(
-                "relative rounded-xl md:rounded-2xl overflow-hidden aspect-[16/9] md:aspect-[4/3] bg-slate-900 border border-black/5 shadow-[0_10px_30px_rgba(15,23,42,0.05)] cursor-default transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group/card",
+                "relative rounded-xl md:rounded-2xl overflow-hidden aspect-video md:aspect-4/3 bg-slate-900 border border-black/5 shadow-[0_10px_30px_rgba(15,23,42,0.05)] cursor-default transition-all duration-500 ease-in-out group/card",
                 "hover:-translate-y-2 hover:shadow-[0_15px_35px_rgba(16,185,129,0.15)]",
                 isVisible
                   ? "opacity-100 translate-y-0"
@@ -107,7 +107,7 @@ function IndustryExpertise() {
               <img
                 src={ind.img}
                 alt={ind.title}
-                className="absolute inset-0 w-full h-full object-cover opacity-70 transition-all duration-[800ms] ease-out z-0 group-hover/card:scale-110 group-hover/card:opacity-40"
+                className="absolute inset-0 w-full h-full object-cover opacity-70 transition-all duration-800 ease-out z-0 group-hover/card:scale-110 group-hover/card:opacity-40"
               />
 
               {/* Dark Gradient Overlay */}
@@ -129,7 +129,7 @@ function IndustryExpertise() {
         {/* Conclusion Banner */}
         <div
           className={cn(
-            "bg-linear-to-br from-slate-900 to-slate-800 rounded-xl md:rounded-2xl p-6 md:p-[30px] lg:p-[35px_40px] flex flex-col md:flex-row items-center gap-4 md:gap-6 shadow-[0_15px_40px_rgba(15,23,42,0.15)] border-t-4 md:border-t-0 md:border-l-4 border-[#10b981] relative overflow-hidden text-center md:text-left transition-all duration-[800ms] ease-[cubic-bezier(0.2,0.8,0.2,1)]",
+            "bg-linear-to-br from-slate-900 to-slate-800 rounded-xl md:rounded-2xl p-6 md:p-7.5 lg:p-[35px_40px] flex flex-col md:flex-row items-center gap-4 md:gap-6 shadow-[0_15px_40px_rgba(15,23,42,0.15)] border-t-4 md:border-t-0 md:border-l-4 border-[#10b981] relative overflow-hidden text-center md:text-left transition-all duration-800 ease-[cubic-bezier(0.2,0.8,0.2,1)]",
             isVisible
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-7.5",
@@ -137,9 +137,9 @@ function IndustryExpertise() {
           style={{ transitionDelay: "200ms" }}
         >
           {/* Radial Blob Decoration */}
-          <div className="absolute -top-[50px] -right-[50px] w-50 h-50 bg-[radial-gradient(circle,rgba(16,185,129,0.2)_0%,transparent_70%)] rounded-full pointer-events-none" />
+          <div className="absolute -top-12.5 -right-12.5 w-50 h-50 bg-[radial-gradient(circle,rgba(16,185,129,0.2)_0%,transparent_70%)] rounded-full pointer-events-none" />
 
-          <div className="w-[50px] h-[50px] min-w-[50px] md:w-[60px] md:h-[60px] md:min-w-[60px] bg-[#10b981]/10 text-[#10b981] text-[1.3rem] md:text-[1.6rem] flex items-center justify-center rounded-xl border border-[#10b981]/20 z-10 mx-auto md:mx-0">
+          <div className="w-12.5 h-12.5 min-w-12.5 md:w-15 md:h-15 md:min-w-15 bg-[#10b981]/10 text-[#10b981] text-[1.3rem] md:text-[1.6rem] flex items-center justify-center rounded-xl border border-[#10b981]/20 z-10 mx-auto md:mx-0">
             <i className="fas fa-globe-americas" aria-hidden="true" />
           </div>
 
